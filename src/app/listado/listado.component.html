@@ -1,0 +1,19 @@
+<div class="container mt-4">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Lista de Pinturas de Vincent van Gogh</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let image of images">
+        <div class="card mb-4">
+          <img [src]="image.url" class="card-img-top img-fluid" alt="{{image.title}}">
+          <div class="card-body">
+            <h5 class="card-title">{{image.title}}</h5>
+            <p class="card-text">{{image.description}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
