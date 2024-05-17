@@ -1,6 +1,10 @@
-<div>
-    <h2>Contador</h2>
-    <button (click)="incrementar()">Incrementar</button>
-    <button (click)="disminuir()">Disminuir</button>
-    <p>El valor actual del contador es: {{valor}}</p>
-  </div>  
+<div class="container mt-5 d-flex justify-content-center align-items-center">
+  <div>
+    <h2 class="text-center">Contador</h2>
+    <div class="text-center">
+      <button class="btn btn-primary button-spacing" (click)="incrementar()">Incrementar</button>
+      <button class="btn btn-danger" (click)="disminuir()">Disminuir</button>
+    </div>
+    <p class="mt-3 text-center">El valor actual del contador es: {{valor}}</p>
+  </div>
+</div>
